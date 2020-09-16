@@ -160,8 +160,15 @@ public class trippTrappGUI extends JPanel implements ActionListener {
 
     //bruker reset metoden i game
     private void resetBoard(String exampleParam) {
+
+        for (int row = 0; row < gridRow; row++) {
+            for (int col = 0; col < gridCol; col++) {
+                spilleKnapper[row][col].setText(OPEN_MARK);
+                spilleKnapper[row][col].setBackground(Color.CYAN);
+            }
+        }
+
         updateMessage(exampleParam);
-        ramme.initializeRuter();
 
         this.updateUI();
 

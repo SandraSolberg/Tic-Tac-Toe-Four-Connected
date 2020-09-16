@@ -84,7 +84,7 @@ s	 * Initializes a JFrame in which we place the game
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource() == exampleButton1) {
-			reset("Clicked the button " + exampleButton1.getText());
+			reset("Clicked the button " + exampleButton1);
 		}
 		if(e.getSource() == exampleButton2) {
 			reset("Clicked the button " + exampleButton2.getText());
